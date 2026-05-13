@@ -7,7 +7,8 @@
     "start": "vite build && vite preview --port 3001 --host",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test" : "jest"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.6.1",
@@ -25,6 +26,7 @@
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.3.4",
     "globals": "^16.0.0",
+    "jest": "^30.4.2",
     "vite": "^6.2.2"
   }
 }

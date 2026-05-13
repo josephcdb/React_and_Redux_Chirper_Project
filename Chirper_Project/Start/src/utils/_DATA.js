@@ -226,7 +226,6 @@ export function _saveLikeToggle ({ id, hasLiked, authedUser }) {
             : tweets[id].likes.concat([authedUser])
         }
       }
-
       res()
     }, 500)
   })
@@ -269,7 +268,6 @@ export function _saveTweet ({ text, author, replyingTo }) {
           tweets: users[author].tweets.concat([formattedTweet.id])
         }
       }
-
       res(formattedTweet)
     }, 1000)
   })

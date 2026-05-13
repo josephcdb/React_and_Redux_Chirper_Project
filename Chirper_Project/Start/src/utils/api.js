@@ -6,10 +6,7 @@ import {
 } from './_DATA.js'
 
 export function getInitialData () {
-  return Promise.all([
-    _getUsers(),
-    _getTweets(),
-  ]).then(([users, tweets]) => ({
+  return Promise.all([_getUsers(), _getTweets()]).then(([users, tweets]) => ({
     users,
     tweets,
   }))
